@@ -1,3 +1,4 @@
+import java.lang;
 public class Queue<T> implements Queueable<T>{
     class Node {
 
@@ -22,7 +23,8 @@ public class Queue<T> implements Queueable<T>{
         Node new_node = new Node(item);
         if (this.end == null) {
             this.end = new_node;
-        } else {
+        }
+        else {
             new_node.next = this.end;
             this.end = new_node;
 
@@ -32,7 +34,7 @@ public class Queue<T> implements Queueable<T>{
 
     public T top() {
         if (this.size == 0)
-            throw new AssertionError();
+            throw new AssertionError("Lista vacia");
 
         else
             return this.first.element;
@@ -41,7 +43,7 @@ public class Queue<T> implements Queueable<T>{
 
     public void remove() {
         if (this.size == 0)
-            throw new AssertionError();
+            throw new AssertionError("Lista vacia");
         else
             this.first = this.first.next;
         size--;
