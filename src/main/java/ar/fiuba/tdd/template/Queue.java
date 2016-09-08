@@ -31,22 +31,28 @@ public class Queue<T> implements Queueable<T> {
         }
         else {
             node.next = this.end;
-            this.end = node;}
+            this.end = node;
+        }
         size++;
     }
 
     public T top() {
         if (this.size == 0) {
-            throw new AssertionError("Lista vacia");}
+            throw new AssertionError("Lista vacia");
+        }
         else {
-            return this.first.element;}
+            return this.first.element;
+        }
     }
 
     public void remove() {
         if (this.size == 0) {
-            throw new java.lang.AssertionError("Lista vacia");}
+            throw new java.lang.AssertionError("Lista vacia");
+        }
+
         else {
-            this.first = this.first.next;}
+            this.first = this.first.next;
+        }
         size--;
 
     }
