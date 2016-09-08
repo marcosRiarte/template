@@ -40,7 +40,6 @@ public class Queue<T> implements Queueable<T> {
     public T top() {
         if (this.size == 0) {
             throw new AssertionError("Lista vacia");
-
         }
         else {
             return this.first.element;
