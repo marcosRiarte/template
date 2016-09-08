@@ -27,8 +27,7 @@ public class Queue<T> implements Queueable<T> {
     public void add(T item) {
         Node node = new Node(item);
         if (this.end == null) {
-            this.end = node;
-        }
+            this.end = node; }
         else {
             node.next = this.end;
             this.end = node;
