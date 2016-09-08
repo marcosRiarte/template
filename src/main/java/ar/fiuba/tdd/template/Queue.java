@@ -1,4 +1,4 @@
-public class Queue<T> implements Queueable<T>{
+public class Queue<T> implements Queueable<T> {
     class Node {
 
         private T element;
@@ -16,8 +16,12 @@ public class Queue<T> implements Queueable<T>{
     private int size = 0;
 
 
-    public boolean isEmpty() { return (size == 0); }
-    public int size() { return this.size; }
+    public boolean isEmpty() {
+        return (size == 0);
+    }
+    public int size() {
+        return this.size;
+    }
     public void add(T item) {
         Node new_node = new Node(item);
         if (this.end == null) {
