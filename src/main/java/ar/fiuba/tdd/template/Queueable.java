@@ -1,4 +1,4 @@
-public interface Queueable <T>{
+public interface Queueable<T>{
     boolean isEmpty();
     int size();
     void add(T item); // agregar un item

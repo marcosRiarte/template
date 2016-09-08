@@ -1,4 +1,3 @@
-import java.lang;
 public class Queue<T> implements Queueable<T>{
     class Node {
 
@@ -43,7 +42,7 @@ public class Queue<T> implements Queueable<T>{
 
     public void remove() {
         if (this.size == 0)
-            throw new AssertionError("Lista vacia");
+            throw new java.lang.AssertionError("Lista vacia");
         else
             this.first = this.first.next;
         size--;
