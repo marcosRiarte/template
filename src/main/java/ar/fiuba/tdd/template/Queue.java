@@ -26,28 +26,19 @@ public class Queue<T> implements Queueable<T> {
 
     public void add(T item) {
         Node node = new Node(item);
-        if (this.end == null)
-        {
-            this.end = node;
-        }
-
-        else
-        {
+        if (this.end == null) {
+            this.end = node;}
+        else {
             node.next = this.end;
-            this.end = node;
-        }
-
+            this.end = node; }
         size++;
     }
 
     public T top() {
-        if (this.size == 0)
-        {
-            throw new AssertionError("Lista vacia");
-        }
+        if (this.size == 0){
+            throw new AssertionError("Lista vacia");}
         else
             return this.first.element;
-
     }
 
     public void remove() {
