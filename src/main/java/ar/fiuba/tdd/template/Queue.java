@@ -19,9 +19,11 @@ public class Queue<T> implements Queueable<T> {
     public boolean isEmpty() {
         return (size == 0);
     }
+
     public int size() {
         return this.size;
     }
+
     public void add(T item) {
         Node new_node = new Node(item);
         if (this.end == null) {
