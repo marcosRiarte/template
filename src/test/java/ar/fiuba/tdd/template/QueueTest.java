@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;//assertEquals;
 import org.junit.Test;
 
-public class QueueTest<T> extends TestCase {
+public class QueueTest<T> {  //extends testCase
     private Queue <T>cola = new Queue<T>();
     private T number;
     private T string;
