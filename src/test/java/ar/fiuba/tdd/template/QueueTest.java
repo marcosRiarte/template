@@ -12,7 +12,7 @@ public class QueueTest<T> {
     }
 
     @Test
-    public void seeSize(){
+    public void seeSize() {
         System.out.println("Test of size of the queue");
         assertEquals("Result with size = 0  value is : ",0,this.cola.size());
         this.cola.add(this.number);
@@ -28,7 +28,6 @@ public class QueueTest<T> {
         T number2 = (T) new Integer(2);
         this.cola.add(number2);
         assertEquals("Result with size = 1 value is : ",1,this.cola.size());
-
     }
 
     @Test
@@ -39,7 +38,7 @@ public class QueueTest<T> {
     }
 
     @Test
-    public void removeElement(){
+    public void removeElement() {
         System.out.println("Test to remove the first element of the queue");
         int tamañoActual=this.cola.size();
         this.cola.remove();
