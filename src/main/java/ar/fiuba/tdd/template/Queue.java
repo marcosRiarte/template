@@ -25,14 +25,13 @@ public class Queue<T> implements Queueable<T> {
     }
 
     public void add(T item) {
-        Node new_node = new Node(item);
+        Node new node = new Node(item);
         if (this.end == null) {
             this.end = new_node;
         }
         else {
-            new_node.next = this.end;
+            new node.next = this.end;
             this.end = new_node;
-
         }
         size++;
     }
